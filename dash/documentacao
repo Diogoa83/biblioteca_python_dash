@@ -1,0 +1,27 @@
+## Importação das Bibliotecas
+
+Abaixo temos a importação das principais bibliotecas utilizadas para a criação do painel. A biblioteca `_my_plotly_package_` é essencial para a criação dos elementos gráficos, e ela foi desenvolvida para facilitar a implementação desses elementos com poucas linhas de código.
+
+Caso queira implementar algo, instale o _pip_ da sua biblioteca e, em seguida, importe-a junto às demais bibliotecas para organização do código.
+
+```python
+from my_plotly_package.plotly_utils import (
+    criar_grafico_barras, 
+    processo_geojson_municipio, 
+    mapa_coropletico, 
+    criar_grafico_pizza_simples, 
+    card_porcentagem, 
+    card, 
+    processo_geojson_regiao
+)
+import dash
+from dash import html, dcc, Input, Output, State, callback, Dash, register_page, dash_table
+import dash_bootstrap_components as dbc
+import geopandas as gpd
+from unidecode import unidecode
+import pandas as pd
+import json
+from dash.dependencies import Input, Output, State
+import psycopg2
+
+register_page(__name__, path='/framework_test')
