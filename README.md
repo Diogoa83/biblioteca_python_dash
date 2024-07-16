@@ -51,11 +51,11 @@ register_page(__name__, path='/framework_test')
 O codigo a baixo facilita a leitura de multiplas tabelas em um unica conexão para melhorar o desempenho.
 ```python
 conexao_info = {
-    'database': "db_dados_tratados",
-    'host': "10.111.9.167",
-    'user': "user_dados_tratados",
-    'password': "Tr@tADOS_PrOc355ing",
-    'port': "5432"
+    'database': "******",
+    'host': "******",
+    'user': "******",
+    'password': "******",
+    'port': "****"
 }
 
 def executar_consulta(query):
